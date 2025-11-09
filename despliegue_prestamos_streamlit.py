@@ -39,28 +39,21 @@ age = st.slider('Edad', min_value=18, max_value=80, value=30, step=1)
 
 income = st.number_input(
     'Ingreso anual (USD)',
-    min_value=0.0,
-    max_value=1_000_000_000.0,
-    value=3_000_000.0,
-    step=1.0,
-    format="%.2f"
+    min_value=0,
+    format="%.0f"
 )
 
 loan_amount = st.number_input(
     'Monto préstamo (USD)',
-    min_value=0.0,
-    max_value=1_000_000_000.0,
-    value=100_000.0,
-    step=1.0,
-    format="%.2f"
+    min_value=1_000,
+    max_value=1_000_000,
+    format="%.0f"
 )
 
 credit_score = st.number_input(
     'Puntaje crediticio',
     min_value=300,
     max_value=800,
-    value=500,
-    step=1,
     format="%.0f"
 )
 
