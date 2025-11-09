@@ -44,14 +44,14 @@ income = st.number_input(
 
 loan_amount = st.number_input(
     'Monto préstamo (USD)',
-    min_value=1_000,
+    min_value=500,
     max_value=1_000_000
 )
 
 credit_score = st.number_input(
     'Puntaje crediticio',
     min_value=300,
-    max_value=800
+    max_value=850
 )
 
 months_employed = st.slider('Antiguedad laboral (meses)', min_value=0, max_value=250, value=12, step=1)
